@@ -10,6 +10,8 @@ COPY nginx.conf /etc/nginx/conf.d/
 # Copy the HTML and CSS files to the Nginx server
 COPY *.html /usr/share/nginx/html/
 COPY *.css /usr/share/nginx/html/
+COPY Profile_photos /usr/share/nginx/html/
+COPY tumbnails /usr/share/nginx/html/
 
 # Expose port 80
 EXPOSE 80
