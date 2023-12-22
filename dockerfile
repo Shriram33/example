@@ -11,7 +11,7 @@ RUN mkdir /usr/share/nginx/html/tumbnails
 RUN mkdir /usr/share/nginx/html/Profile_photos
 
 # Copy the HTML and CSS files to the Nginx server
-RUN mv -f youtube.html /usr/share/nginx/html/index.html
+ADD  youtube.html /usr/share/nginx/html/index.html
 COPY Profile_photos /usr/share/nginx/html/Profile_photos
 COPY tumbnails /usr/share/nginx/html/tumbnails
 
